@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header .titulo h2 {
+    margin: 0;
+}
+
+header .buscador input {
+    padding: 5px;
+}
+
+header .buscador button {
+    padding: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el layout */
+.container {
+    display: flex;
+    min-height: 100vh; /* Mantener el contenido expandido a la pantalla completa */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 10%;
+    background-color: #232323f2;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.sidebar li:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+
+
+
+/* Contenido principal */
+.contenido {
+    width: 80%;
+    padding: 20px;
+    text-align: justify; /* Justificar el texto */
+}
+
+/* Eventos Próximos */
+.eventos-proximos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el contenido */
+}
+
+.eventos-navegacion {
+    display: flex;
+    align-items: center;
+}
+
+.eventos-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center; /* Centrar el contenido */
+}
+
+.evento {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    min-width: 200px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    text-align: justify; /* Justificar el texto */
+    display: none; /* Ocultar todos los eventos por defecto */
+    opacity: 0; /* Ocultar inicialmente */
+    transform: translateX(100%); /* Mover fuera de la vista inicialmente */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transición suave */
+}
+
+.evento.active {
+    display: block; /* Mostrar solo el evento activo */
+    opacity: 1; /* Mostrar el evento activo */
+    transform: translateX(0); /* Mover el evento activo a su posición */
+}
+
+.evento.slide-in-left {
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+.evento.slide-in-right {
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+.evento.slide-out-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.evento.slide-out-right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.evento h4 {
+    margin: 0 0 10px;
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    overflow: hidden; /* Ocultar el texto que se desborda */
+    text-overflow: ellipsis; /* Añadir puntos suspensivos al final del texto */
+}
+
+.evento p {
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    overflow: hidden; /* Ocultar el texto que se desborda */
+    text-overflow: ellipsis; /* Añadir puntos suspensivos al final del texto */
+}
+
+.evento img {
+    width: 100px;  /* Tamaño ajustado de la imagen */
+    height: auto;
+    display: block;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Botones de navegación */
+button.prev, button.next {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #0056b3;
+}
+
+/* Estadísticas y botones */
+.estadisticas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.estadisticas button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.estadisticas button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Ajustes adicionales */
+footer p {
+    margin: 0;
+}
+
+
+/* Añadir esto a tu archivo estilos.css */
+.login-button {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-login:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}

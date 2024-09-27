@@ -1,0 +1,98 @@
+.custom-login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-login-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.custom-form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.custom-form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.custom-form-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.submit-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-row input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.submit-row input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.submit-row input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilos adicionales para los botones de redes sociales */
+.social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-login button {
+    background-color: #4267B2; /* Color de Facebook */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-login button.google {
+    background-color: #DB4437; /* Color de Google */
+}
+
+.social-login button:hover {
+    transform: translateY(-2px);
+}
+
+.social-login button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
